@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="rgisterSB" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="MiRestaurantArm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-QW-s1Q">
+                                <rect key="frame" x="-150" y="59" width="543" height="759"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DPh-In-zAQ">
+                                <rect key="frame" x="30" y="708" width="333" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGy-G0-rtv">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="pLO-WK-KFF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DPh-In-zAQ" secondAttribute="bottom" constant="50" id="Mka-rS-lrI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NTB-QW-s1Q" secondAttribute="bottom" id="Qgu-ZB-Z9k"/>
+                            <constraint firstItem="DPh-In-zAQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="RdY-Nr-NWu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DPh-In-zAQ" secondAttribute="trailing" constant="30" id="Wa3-PH-3EJ"/>
+                            <constraint firstItem="NTB-QW-s1Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="X8y-68-9cJ"/>
+                            <constraint firstItem="NTB-QW-s1Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="-150" id="d2F-1P-G3X"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NTB-QW-s1Q" secondAttribute="trailing" id="qJC-yF-ITq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467.93893129770993" y="-214.08450704225353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2813" height="5001"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
