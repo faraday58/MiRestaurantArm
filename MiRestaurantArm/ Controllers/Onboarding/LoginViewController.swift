@@ -9,13 +9,33 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    
+    
+    
+    var user = User(name: "", password: "", email: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUP()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func setUP()
+    {
+        userLabel.text = user.name
+        emailLabel.text = user.email
     }
     
 
+    @IBAction func LoginDismissAction(_ sender: Any) {
+        dismiss(animated: true)
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -12,9 +12,9 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var userTextField: UITextField!
     
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var retPasswordTextField: UITextField!
+    @IBOutlet weak var passTextField: UITextField!
     
     
     @IBOutlet weak var registerButton: UIButton!
@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(named: "ColorHeader")
         setUP()
 
     }
@@ -37,24 +37,43 @@ class RegisterViewController: UIViewController {
         logoImageView.image = UIImage(named: "perfil")
         logoImageView.contentMode = .scaleAspectFill
         logoImageView.layer.cornerRadius = logoImageView.bounds.width / 2
-        errorLabel.isHidden = false
-        errorLabel.text = "chale"
-        
+        errorLabel.isHidden = true
+        passTextField.textContentType = .password
+        emailTextField.textContentType = .emailAddress
     }
     
     
     @IBAction func registerAction(_ sender: Any) {
-        let user = userTextField.text
-        let password = passwordTextField.text
-        let retPassword =  retPasswordTextField.text
+        guard let user = userTextField.text,
+              let password = passTextField.text,
+                let email =  emailTextField.text
+                else
+        {return}
         
-        if password != retPassword {
+        if user.isEmpty || password.isEmpty || email.isEmpty {
             errorLabel.isHidden = false
-            errorLabel.text = "Password don't match"
+            errorLabel.text = "Field shouldn't empty"
         }else
         {
             errorLabel.isHidden = true
+            let newUser = User(name: user, password: password, email: email)
+            PresentLoginModule(withUser: newUser)
         }
+        
+        
+    }
+    
+    func PresentLoginModule(withUser user: User)
+    {
+        let loginStoryBoard = UIStoryboard(name: "LoginStoryBoard", bundle: .main)
+        let loginViewController = loginStoryBoard.instantiateViewController(identifier: "LoginSB") as! LoginViewController
+        let loginNavigation = UINavigationController(rootViewController: loginViewController)
+        
+        loginViewController.user = user
+        
+        loginNavigation.modalPresentationStyle = .fullScreen
+        
+        present(loginNavigation, animated: true)
         
         
     }

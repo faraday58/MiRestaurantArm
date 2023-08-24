@@ -32,15 +32,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJg-pI-tTB">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJg-pI-tTB" userLabel="Pasword">
                                         <rect key="frame" x="0.0" y="65.000000000000057" width="353" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ZgQ-2o-CSV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHW-tW-pdc">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHW-tW-pdc">
                                         <rect key="frame" x="0.0" y="130.00000000000006" width="353" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="61B-Md-Rmf"/>
@@ -96,11 +96,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="dHW-tW-pdc" id="BEj-NQ-cqV"/>
                         <outlet property="errorLabel" destination="1IP-VH-WnH" id="dq5-Lz-yJX"/>
                         <outlet property="logoImageView" destination="h36-fd-KlV" id="4yt-oY-7EV"/>
-                        <outlet property="passwordTextField" destination="dHW-tW-pdc" id="7BA-wq-iPf"/>
+                        <outlet property="passTextField" destination="pJg-pI-tTB" id="ZdF-K9-V8G"/>
                         <outlet property="registerButton" destination="yI9-1M-xmC" id="Cee-aN-dhv"/>
-                        <outlet property="retPasswordTextField" destination="dHW-tW-pdc" id="D2T-8m-jNX"/>
                         <outlet property="userTextField" destination="pJg-pI-tTB" id="VVe-Ix-ehd"/>
                     </connections>
                 </viewController>

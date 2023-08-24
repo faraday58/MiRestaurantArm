@@ -11,7 +11,7 @@ class OrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = UIColor(named: "ColorHeader")
 
         // Do any additional setup after loading the view.
     }

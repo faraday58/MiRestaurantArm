@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .brown
+        view.backgroundColor = UIColor(named: "ColorHeader")
         let uiImage = UIImage(systemName: "person.fill")
         
         self.navigationController?.title = "Home"
