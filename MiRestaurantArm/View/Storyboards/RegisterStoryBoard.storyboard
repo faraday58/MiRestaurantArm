@@ -74,6 +74,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Sus-v1-E9T" secondAttribute="bottom" constant="50" id="rRN-9Z-0Wn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="h36-fd-KlV" id="4yt-oY-7EV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
