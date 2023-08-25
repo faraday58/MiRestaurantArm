@@ -20,6 +20,8 @@
 		474B52AE2A93CBD1007D65B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474B52AC2A93CBD1007D65B9 /* Main.storyboard */; };
 		474B52B02A93CBD2007D65B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474B52AF2A93CBD2007D65B9 /* Assets.xcassets */; };
 		474B52B32A93CBD2007D65B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474B52B12A93CBD2007D65B9 /* LaunchScreen.storyboard */; };
+		4787C22A2A98529900497D43 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787C2282A98529900497D43 /* MyCustomCell.swift */; };
+		4787C22B2A98529900497D43 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787C2292A98529900497D43 /* MyCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		474B52AF2A93CBD2007D65B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		474B52B22A93CBD2007D65B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		474B52B42A93CBD2007D65B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4787C2282A98529900497D43 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		4787C2292A98529900497D43 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		474B52A52A93CBD1007D65B9 /* MiRestaurantArm */ = {
 			isa = PBXGroup;
 			children = (
+				4787C2272A9851F400497D43 /* CustomElements */,
 				471C88C22A95709300C5DDEE /*  Controllers */,
 				471C88C12A95708A00C5DDEE /* View */,
 				471C88C02A95707C00C5DDEE /* Model */,
@@ -134,6 +139,15 @@
 				474B52B42A93CBD2007D65B9 /* Info.plist */,
 			);
 			path = MiRestaurantArm;
+			sourceTree = "<group>";
+		};
+		4787C2272A9851F400497D43 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				4787C2282A98529900497D43 /* MyCustomCell.swift */,
+				4787C2292A98529900497D43 /* MyCustomCell.xib */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,7 @@
 				471C88D12A96A49900C5DDEE /* RegisterStoryBoard.storyboard in Resources */,
 				474B52B02A93CBD2007D65B9 /* Assets.xcassets in Resources */,
 				474B52AE2A93CBD1007D65B9 /* Main.storyboard in Resources */,
+				4787C22B2A98529900497D43 /* MyCustomCell.xib in Resources */,
 				471C88CF2A96A48100C5DDEE /* LoginStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4787C22A2A98529900497D43 /* MyCustomCell.swift in Sources */,
 				471C88CB2A9586D000C5DDEE /* LoginViewController.swift in Sources */,
 				474B52AB2A93CBD1007D65B9 /* HomeViewController.swift in Sources */,
 				471C88CD2A9586D800C5DDEE /* RegisterViewController.swift in Sources */,
