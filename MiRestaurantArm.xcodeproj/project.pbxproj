@@ -22,6 +22,8 @@
 		474B52B32A93CBD2007D65B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474B52B12A93CBD2007D65B9 /* LaunchScreen.storyboard */; };
 		4787C22A2A98529900497D43 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787C2282A98529900497D43 /* MyCustomCell.swift */; };
 		4787C22B2A98529900497D43 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787C2292A98529900497D43 /* MyCustomCell.xib */; };
+		47E800A32A995D20008EAD58 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E800A22A995D20008EAD58 /* MyCollectionViewCell.swift */; };
+		47E800A52A9961C6008EAD58 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E800A42A9961C6008EAD58 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		474B52B42A93CBD2007D65B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4787C2282A98529900497D43 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		4787C2292A98529900497D43 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		47E800A22A995D20008EAD58 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		47E800A42A9961C6008EAD58 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				473980EA2A97FE5D00FEFD21 /* User.swift */,
+				47E800A42A9961C6008EAD58 /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			children = (
 				4787C2282A98529900497D43 /* MyCustomCell.swift */,
 				4787C2292A98529900497D43 /* MyCustomCell.xib */,
+				47E800A22A995D20008EAD58 /* MyCollectionViewCell.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -230,6 +236,8 @@
 				471C88CD2A9586D800C5DDEE /* RegisterViewController.swift in Sources */,
 				471C88C82A9577E800C5DDEE /* ConfigureViewController.swift in Sources */,
 				473980EB2A97FE5D00FEFD21 /* User.swift in Sources */,
+				47E800A52A9961C6008EAD58 /* Categories.swift in Sources */,
+				47E800A32A995D20008EAD58 /* MyCollectionViewCell.swift in Sources */,
 				474B52A72A93CBD1007D65B9 /* AppDelegate.swift in Sources */,
 				474B52A92A93CBD1007D65B9 /* SceneDelegate.swift in Sources */,
 				471C88C62A9577CB00C5DDEE /* OrderViewController.swift in Sources */,
