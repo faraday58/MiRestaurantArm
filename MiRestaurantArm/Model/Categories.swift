@@ -6,8 +6,14 @@
 //
 
 import Foundation
-
-struct Categories{
+/*
+struct Categories {
     let title : String
     let imageName : String
 }
+*/
+
+struct CategoriesModel: Decodable {
+    let categories: String
+}
+

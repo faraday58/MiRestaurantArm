@@ -9,12 +9,17 @@ import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell{
     
+    
+    
+    
     private let CellStackView: UIStackView = {
        let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.layer.borderColor = UIColor(named: "Colorheader")?.cgColor
+        stackView.layer.borderColor = UIColor(named: "ColorText")?.cgColor
         stackView.layer.borderWidth = 1
+        stackView.layer.cornerRadius = 20
+        stackView.spacing = 20
         return stackView
         
     }()
@@ -28,7 +33,7 @@ class MyCollectionViewCell: UICollectionViewCell{
 
     private let categorieLabel: UILabel = {
        let label = UILabel()
-        label.textColor = UIColor(named: "ColorHeader")
+        label.textColor = UIColor(named: "ColorText")
         label.font = .systemFont(ofSize: 22)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -58,10 +63,10 @@ class MyCollectionViewCell: UICollectionViewCell{
     
     
     
-    func configure(model: Categories)
+    func configure(model: CategoriesModel)
     {
-        categorieLabel.text = model.title
-        categorieImageView.image = UIImage(systemName: model.imageName)
+        categorieLabel.text = model.categories
+        categorieImageView.image = UIImage(named: "plate")
     }
     
     

@@ -208,19 +208,8 @@
                     <view key="view" contentMode="scaleToFill" id="daV-9h-UCK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2qh-1t-1If">
-                                <rect key="frame" x="0.0" y="103" width="393" height="617"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tnI-AI-G6p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2qh-1t-1If" firstAttribute="leading" secondItem="tnI-AI-G6p" secondAttribute="leading" id="0PX-4d-mqG"/>
-                            <constraint firstItem="tnI-AI-G6p" firstAttribute="trailing" secondItem="2qh-1t-1If" secondAttribute="trailing" id="5dY-SG-JW2"/>
-                            <constraint firstItem="tnI-AI-G6p" firstAttribute="bottom" secondItem="2qh-1t-1If" secondAttribute="bottom" id="MoF-d4-1D3"/>
-                            <constraint firstItem="2qh-1t-1If" firstAttribute="top" secondItem="tnI-AI-G6p" secondAttribute="top" id="iZK-G3-T8K"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Home" id="w0I-SU-IZT"/>

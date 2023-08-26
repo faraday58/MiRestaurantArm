@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/*
 let categories = [
     Categories(title: "appetizer", imageName: "cup.and.saucer"),
     Categories(title: "salads", imageName: "cup.and.saucer.fill"),
@@ -15,22 +15,35 @@ let categories = [
     Categories(title: "desserts", imageName: "fork.knife"),
     Categories(title: "sandwiches", imageName: "fork.knife.circle.fill"),
     
+    
 ]
-
+*/
 
 class HomeViewController: UIViewController {
-    
-    
-    
+   
     private let CategoriesCollectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: 300, height: 80)
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = 10
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         return collectionView
         
     }()
+    
+    var myCategories : CategoriesModel? {
+        didSet {
+            DispatchQueue.main.async {
+                
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +63,7 @@ class HomeViewController: UIViewController {
     
     func ConfigureCollection()
     {
+        CategoriesCollectionView.backgroundColor = .red
         CategoriesCollectionView.dataSource = self
         CategoriesCollectionView.backgroundColor = UIColor(named: "ColorHeader")
         CategoriesCollectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "MyCollectionViewCell")
@@ -86,6 +100,8 @@ extension HomeViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
+        cell.backgroundColor = UIColor(named: "ColorHead")
+        cell.layer.cornerRadius = 20
         let model = categories[indexPath.row]
         
         cell.configure(model: model)

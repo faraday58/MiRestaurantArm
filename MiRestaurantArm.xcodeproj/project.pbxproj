@@ -24,6 +24,7 @@
 		4787C22B2A98529900497D43 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787C2292A98529900497D43 /* MyCustomCell.xib */; };
 		47E800A32A995D20008EAD58 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E800A22A995D20008EAD58 /* MyCollectionViewCell.swift */; };
 		47E800A52A9961C6008EAD58 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E800A42A9961C6008EAD58 /* Categories.swift */; };
+		47E800A72A99A389008EAD58 /* CategoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E800A62A99A389008EAD58 /* CategoriesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4787C2292A98529900497D43 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 		47E800A22A995D20008EAD58 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		47E800A42A9961C6008EAD58 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		47E800A62A99A389008EAD58 /* CategoriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		471C88C22A95709300C5DDEE /*  Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				47E800A62A99A389008EAD58 /* CategoriesManager.swift */,
 				471C88C92A9586BC00C5DDEE /* Onboarding */,
 				471C88C42A95740600C5DDEE /* CoreTabs */,
 			);
@@ -241,6 +244,7 @@
 				474B52A72A93CBD1007D65B9 /* AppDelegate.swift in Sources */,
 				474B52A92A93CBD1007D65B9 /* SceneDelegate.swift in Sources */,
 				471C88C62A9577CB00C5DDEE /* OrderViewController.swift in Sources */,
+				47E800A72A99A389008EAD58 /* CategoriesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
